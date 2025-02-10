@@ -34,17 +34,22 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hidden hero">
             <div class="container container-hero">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
-        <section class="categories">
+        <section class="hidden categories">
             <div class="container">
                 <h2 class="visually-hidden">Our Adventages</h2>
                 <ul class="categories-list">
@@ -95,13 +100,13 @@
                 </ul>
             </div>
         </section>
-        <section class="page-team">
+        <section class="hidden page-team">
             <div class="container page-container">
                 <h2 class="team-title">Our Team</h2>
-                <!--images-->
                 <ul class="page-list">
                     <li class="photo">
-                        <img src="./images/mark.jpg" alt="mark" width="264" height="260">
+                        <img srcset="./images/team/team-1-min.jpg 1x, ./images/team/team-1@2x-min.jpg 2x"
+                            src="./images/team/team-1-min.jpg" alt="mark" width="264" height="260">
                         <div class="team-name">
                             <h3 class="initial">Mark Guerrero</h3>
                             <p class="profession">Product Designer</p>
@@ -138,7 +143,8 @@
                         </div>
                     </li>
                     <li class="photo">
-                        <img src="./images/tom.jpg" alt="tom" width="264" height="260">
+                        <img srcset="./images/team/team-2-min.jpg 1x, ./images/team/team-2@2x-min.jpg 2x"
+                            src="./images/team/team-2-min.jpg" alt="tom" width="264" height="260">
                         <div class="team-name">
                             <h3 class="initial">Tom Ford</h3>
                             <p class="profession">Frontend Developer</p>
@@ -175,7 +181,8 @@
                         </div>
                     </li>
                     <li class="photo">
-                        <img src="./images/camila.jpg" alt="camila" width="264" height="260">
+                        <img srcset="./images/team/team-3-min.jpg 1x, ./images/team/team-3@2x-min.jpg 2x"
+                            src="./images/team/team-3-min.jpg" alt="camila" width="264" height="260">
                         <div class="team-name">
                             <h3 class="initial">Camila Garcia</h3>
                             <p class="profession">Marketing</p>
@@ -212,7 +219,8 @@
                         </div>
                     </li>
                     <li class="photo">
-                        <img src="./images/daniel.jpg" alt="daniel" width="264" height="260">
+                        <img srcset="./images/team/team-4-min.jpg 1x, ./images/team/team-4@2x-min.jpg 2x"
+                            src="./images/team/team-4-min.jpg" alt="daniel" width="264" height="260">
                         <div class="team-name">
                             <h3 class="initial">Daniel Wilson</h3>
                             <p class="profession">UI Designer</p>
@@ -251,14 +259,22 @@
                 </ul>
             </div>
         </section>
-        <section class="page-portfolio">
+        <section class="hidden page-portfolio">
             <div class="container portfolio-container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
-                <!--images-->
                 <ul class="portfolio-list">
                     <li class="portfollio-images">
                         <div class="portfollio-text-container">
-                            <img src="./images/banking.jpg" alt="banking app" width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/portfolio/portfolio-desk-1-min.jpg 1x, ./images/portfolio/portfolio-desk-1@2x-min.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/portfolio-tab-1-min.jpg 1x, ./images/portfolio/portfolio-tab-1@2x-min.jpg 2x">
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/portfolio/portfolio-mob-1-min.jpg 1x, ./images/portfolio/portfolio-mob-1@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-1-min" alt="banking app" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfollio-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App ·
                                 Calorie
@@ -272,7 +288,19 @@
                     </li>
                     <li class="portfollio-images">
                         <div class="portfollio-text-container">
-                            <img src="./images/cashlees.jpg" alt="cashless payment" width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="
+                                    ./images/portfolio/portfolio-desk-2-min.jpg 1x,
+                                    ./images/portfolio/portfolio-desk-2@2x-min.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/portfolio/portfolio-tab-2-min.jpg 1x,
+                                    ./images/portfolio/portfolio-tab-2@2x-min.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/portfolio/portfolio-mob-2-min.jpg 1x,
+                                    ./images/portfolio/portfolio-mob-2@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-2-min.jpg" alt="cashless payment"
+                                    width="360" height="300">
+                            </picture>
                             <p class="portfollio-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App ·
                                 Calorie
@@ -286,7 +314,19 @@
                     </li>
                     <li class="portfollio-images">
                         <div class="portfollio-text-container">
-                            <img src="./images/meditation.jpg" alt="meditation app" width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="
+                                    ./images/portfolio/portfolio-desk-3-min.jpg 1x,
+                                    ./images/portfolio/portfolio-desk-3@2x-min.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/portfolio/portfolio-tab-3-min.jpg 1x,
+                                    ./images/portfolio/portfolio-tab-3@2x-min.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/portfolio/portfolio-mob-3-min.jpg 1x,
+                                    ./images/portfolio/portfolio-mob-3@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-3-min.jpg" alt="meditation app" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfollio-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App ·
                                 Calorie
@@ -300,7 +340,19 @@
                     </li>
                     <li class="portfollio-images">
                         <div class="portfollio-text-container">
-                            <img src="./images/taxi.jpg" alt="taxi service" width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="
+                            ./images/portfolio/portfolio-desk-4-min.jpg 1x, 
+                            ./images/portfolio/portfolio-desk-4@2x-min.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="
+                            ./images/portfolio/portfolio-tab-4-min.jpg 1x, 
+                            ./images/portfolio/portfolio-tab-4@2x-min.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="
+                            ./images/portfolio/portfolio-mob-4-min.jpg 1x, 
+                            ./images/portfolio/portfolio-mob-4@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-4-min.jpg" alt="taxi service" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfollio-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App ·
                                 Calorie
@@ -314,7 +366,19 @@
                     </li>
                     <li class="portfollio-images">
                         <div class="portfollio-text-container">
-                            <img src="./images/screen.jpg" alt="screen illustrations" width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="
+                                    ./images/portfolio/portfolio-desk-5-min.jpg 1x, 
+                                    ./images/portfolio/portfolio-desk-5@2x-min.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/portfolio/portfolio-tab-5-min.jpg 1x, 
+                                    ./images/portfolio/portfolio-tab-5@2x-min.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/portfolio/portfolio-mob-5-min.jpg 1x, 
+                                    ./images/portfolio/portfolio-mob-5@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-5-min.jpg" alt="screen illustrations"
+                                    width="360" height="300">
+                            </picture>
                             <p class="portfollio-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App ·
                                 Calorie
@@ -328,7 +392,19 @@
                     </li>
                     <li class="portfollio-images">
                         <div class="portfollio-text-container">
-                            <img src="./images/online.jpg" alt="online courses" width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="
+                                    ./images/portfolio/portfolio-desk-6-min.jpg 1x, 
+                                    ./images/portfolio/portfolio-desk-6@2x-min.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/portfolio/portfolio-tab-6-min.jpg 1x, 
+                                    ./images/portfolio/portfolio-tab-6@2x-min.jpg 2x">
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/portfolio/portfolio-mob-6-min.jpg 1x, 
+                                    ./images/portfolio/portfolio-mob-6@2x-min.jpg 2x">
+                                <img src="./images/portfolio/portfolio-desk-6-min.jpg" alt="online courses" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfollio-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App ·
                                 Calorie
@@ -345,7 +421,7 @@
         </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="hidden page-footer">
         <div class="container footer-last">
             <div class="footer-container">
                 <a class="logo footer-logo" href="./index.html">Web<span class="logo-back">Studio</span></a>
@@ -402,7 +478,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-open" data-modal>
+    <!-- <div class="hidden backdrop is-open" data-modal>
         <div class="modal">
             <button class="footer-button-close" type="button" data-modal-close>
                 <svg class="close-icon" width="8" height="8">
@@ -457,7 +533,7 @@
                 <button class="button-submit" type="submit">Send</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
 </body>
 
