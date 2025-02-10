@@ -566,9 +566,7 @@ button {
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .socials-icons {
   fill: #f4f4fd;
 }
@@ -591,6 +589,9 @@ button {
   }
   .photo {
     flex-basis: calc((100% - 72px) / 4);
+  }
+  .socials-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .socials-link:hover,
   .socials-link:focus {
